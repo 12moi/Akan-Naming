@@ -7,6 +7,7 @@ body{
     padding-right: 10%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
+    background-image: url(bg1.jpg);
 }
 .container{
     align-items: center;
@@ -23,3 +24,10 @@ button:hover{
     color: black;
     cursor: pointer;
 }
+#myvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
