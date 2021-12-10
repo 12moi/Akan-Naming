@@ -14,6 +14,9 @@ body{
         justify-content: space-between;
 
 }
+.logo img{
+    size: 5px;
+}
 .btn{
     /* padding-left: 50%; */
     font-size: 20px;
@@ -26,6 +29,38 @@ body{
 .container{
     /* margin-left: 20%; */
     /* margin-right: 20%; */
-    background-color: grey;
+    background-color:blue;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
    
+}
+.form{
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 2%;
+}
+.form button{
+    font-size: 20px;
+    border-radius: 18px;
+    padding: 15px 30px;
+    margin: 5px 4px;
+    cursor: pointer;
+    background-color:blue;
+}
+#date, #month{
+    width: 10%;
+    border-radius: 18px;
+}
+#year{
+    width:10%;
+}
+
+
+.footer{
+    background-color: white;
+    
+    color: rgb(36, 34, 34); 
+    text-align: center;
 }

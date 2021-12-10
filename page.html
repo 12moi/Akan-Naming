@@ -22,26 +22,31 @@
       <center><h2>Akan Names</h2></center> 
       <center> <p>You just have to enter birthday <strong>Day</strong> Date and <em>Gender</em></p></center>
    </div>
-   <div class="form">
+    <div class="form">
        <center><h3>
         Fill out this form below to get your Akan Name
-    </h3></center>
+       </h3></center>
       
        <center><form>
+       
+        <label for="day">Day</label><br>
+        <input type="text" placeholder="M" id="day" name="date"><br><br>
+        <label for="month">Month</label><br>
+        <input type="text" placeholder="MM" id="date" name="month"><br><br>
+        <label for="year">Year</label><br>
+        <input type="text" placeholder="YYYY" id="date" name="year"><br><br>
+        <h4>Gender</h4>
         <input type="radio" name="gender" value="female"> female<br>
         <input type="radio" name="gender" value="male"> male<br><br>
-        <label for="day">Day</label><br>
-        <input type="text" id="date" name="date"><br><br>
-        <label for="month">Month</label><br>
-        <input type="text" id="date" name="date"><br><br>
-        <label for="year">Year</label><br>
-        <input type="text" id="date" name="date"><br><br>
         <button class="form-button">Submit</button>
        </form></center>
-   </div>
+    </div>
     </div>
     <div class="footer">
         Akan Names    All Rights Reserved
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="page.js"></script>
 </body>
 </html>
