@@ -12,6 +12,21 @@ body{
 .container{
     align-items: center;
 }
+.button{
+    margin-top: 15%;
+}
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 18px;
+    padding: 15px 30px;
+    margin: 5px 4px;
+    cursor: pointer;
+    background-color:blue;
+}
+.btn a{
+    text-decoration: none;
+}
 #btn{
     color: black;
     margin-top: auto;
@@ -19,15 +34,3 @@ body{
     padding-left: 40%;
     font-size: 30px;
 }
-button:hover{
-    
-    color: black;
-    cursor: pointer;
-}
-#myvideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
