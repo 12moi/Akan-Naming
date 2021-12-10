@@ -17,7 +17,7 @@ body{
 .logo img{
     size: 5px;
 }
-.btn{
+.btn1{
     /* padding-left: 50%; */
     font-size: 20px;
     border-radius: 18px;
@@ -41,7 +41,7 @@ body{
     margin-right: 30%;
     padding-bottom: 2%;
 }
-.form button{
+.btn{
     font-size: 20px;
     border-radius: 18px;
     padding: 15px 30px;
@@ -49,15 +49,36 @@ body{
     cursor: pointer;
     background-color:blue;
 }
+#day{
+    border-radius: 10px;
+    width: 30%;
+    height: 30px;
+}
 #date, #month{
-    width: 10%;
-    border-radius: 18px;
+    height: 30px;
+    width: 30%;
+    border-radius: 10px;
 }
 #year{
-    width:10%;
+    border-radius: 10px;
+    height: 30px;
+    margin: 5px;
+    width:30%;
 }
+.socio{
+    display: flex;
+    flex-basis: auto;
+    padding-left: 40%;
+    margin-bottom: 5px;
+    
+    /* justify-content: center; */
 
-
+}
+.fab{
+    
+     color:blue;
+     /* justify-content: center; */
+}
 .footer{
     background-color: white;
     
