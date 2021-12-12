@@ -27,27 +27,30 @@
        <center><h3>
         Fill out this form below to get your Akan Name
        </h3></center>
-      
-       <center><form>
+      <!-- Start of myForm -->
+       <center><form class="myForm">
        
         <label for="day">Day</label><br>
-        <input type="text" placeholder="M" id="day" name="date" required><br><br>
+        <input type="text" placeholder="Day in string" id="day" name="date" required><br><br>
         <label for="month">Month</label><br>
-        <input type="text" placeholder="Month in digits" id="date" name="month" required><br><br>
+        <input type="text" placeholder="Month in digits" id="month" name="month" required><br><br>
         <label for="year">Year</label><br>
-        <input type="text" placeholder="YYYY" id="date" name="year" required><br><br>
+        <input type="text" placeholder="Year in digits" id="year" name="year" required><br><br>
         <h4>Gender</h4>
-        <input type="radio" name="gender" value="female" checked /> female<br>
-        <input type="radio" name="gender" value="male" /> male<br><br>
-        <input type="reset" class="btn" value="submit" onclick="output()"/><br><br>
-        <!-- <button id="btn">Submit</button> -->
+        <div class="radio">
+           <input type="radio" name="gender" value="female" checked /> female<br>
+           <input type="radio" name="gender" value="male" /> male<br><br>
+        </div>
+        <input type="reset" id="btn" value="submit" onclick="output()"/><br><br>
+       
        </form></center>
+       <!-- End of myForm -->
        <div class="outcome"></div>
     </div>
     </div>
     <div class="socio">
         
-        <i class="fab fa-facebook fa-2x"></i>
+       <i class="fab fa-facebook fa-2x"> <a href ="http://www.facebook.com/my_page"></a></i>
         <i class="fab fa-twitter fa-2x" ></i>
         <i class="fab fa-whatsapp fa-2x"></i>
         <i class="fab fa-linkedin fa-2x"></i>
