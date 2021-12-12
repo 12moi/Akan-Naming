@@ -35,17 +35,20 @@
         <label for="month">Month</label><br>
         <input type="text" placeholder="Month in digits" id="month" name="month" required><br><br>
         <label for="year">Year</label><br>
-        <input type="text" placeholder="Year in digits" id="year" name="year" required><br><br>
+        <input type="text" placeholder="Year in digits" id="year" name="year" required><br>
         <h4>Gender</h4>
         <div class="radio">
-           <input type="radio" name="gender" value="female" checked /> female<br>
-           <input type="radio" name="gender" value="male" /> male<br><br>
+           <input type="radio"  id="female" name="gender" value="female" checked /> female<br>
+           <input type="radio" id="female" name="gender" value="male" /> male<br><br>
         </div>
-        <input type="reset" id="btn" value="submit" onclick="output()"/><br><br>
+        <input type="reset" id="submit" value="submit" onclick="output()"/><br><br>
        
        </form></center>
        <!-- End of myForm -->
-       <div class="outcome"></div>
+       <div id="output"></div>
+       <div id="display">
+
+       </div>
     </div>
     </div>
     <div class="socio">
@@ -61,7 +64,7 @@
         Akan Names    All Rights Reserved
     </div>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
-    <script src="page.js"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+    <script src="main-javascript/main.js"></script>
 </body>
 </html>
