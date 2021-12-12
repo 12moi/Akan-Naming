@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
+    
     <div class="heading">
         <div class="logo">
             <img src="images/logo.jpg">
@@ -27,21 +28,24 @@
        <center><h3>
         Fill out this form below to get your Akan Name
        </h3></center>
+
+
       <!-- Start of myForm -->
-       <center><form class="myForm">
+       <center><form id="myForm" method="post">
        
         <label for="day">Day</label><br>
-        <input type="text" placeholder="Day in string" id="day" name="date" required><br><br>
+        <input type="text" placeholder="day" id="day" name="date" required><br><br>
         <label for="month">Month</label><br>
-        <input type="text" placeholder="Month in digits" id="month" name="month" required><br><br>
+        <input type="text" placeholder="month" id="month" name="month" required><br><br>
         <label for="year">Year</label><br>
-        <input type="text" placeholder="Year in digits" id="year" name="year" required><br>
+        <input type="text" placeholder="year in digits" id="year" name="year" required><br>
         <h4>Gender</h4>
         <div class="radio">
-           <input type="radio"  id="female" name="gender" value="female" checked /> female<br>
-           <input type="radio" id="female" name="gender" value="male" /> male<br><br>
+           <input type="radio"  id="gender" name="gender" value="female" checked /> female<br>
+           <input type="radio" id="gender" name="gender" value="male" /> male<br><br>
         </div>
-        <input type="reset" id="submit" value="submit" onclick="output()"/><br><br>
+        <input type="button" id="button" value="submit" Onclick="validate()"/><br><br>
+        
        
        </form></center>
        <!-- End of myForm -->
@@ -64,7 +68,7 @@
         Akan Names    All Rights Reserved
     </div>
 
-     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
     <script src="main-javascript/main.js"></script>
+    
 </body>
 </html>

@@ -42,8 +42,8 @@ body{
     margin-bottom: 5%;
    
 }
-.myForm{
-    background-color: white;
+#myForm{
+    background-color: blue;
     margin-left: 30%;
     margin-right: 30%;
     padding-bottom: 2%;
@@ -60,13 +60,18 @@ body{
     
 }
 
-#submit{
+#button{
     font-size: 20px;
     border-radius: 18px;
     padding: 15px 30px;
     margin: 5px 4px;
     cursor: pointer;
-    background-color:blue;
+    color: white;
+    background-color:black;
+}
+#button:hover{
+    background-color: white;
+    color: blue;
 }
 #btn:hover{
     background-color: black;
