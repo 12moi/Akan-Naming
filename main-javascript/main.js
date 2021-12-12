@@ -21,7 +21,7 @@ var validate=function(){
     var maleName=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var birthday=new Date(dd +"/" +mm+"/"+yy);
     
-    var dayOfweek=birthday.getDay();
+    // var dayOfweek=birthday.getDay();
 
     var results=(cc/4-2*cc-1+(5*yy)/4+(26*(mm+1))/10+dd)%7;
    
@@ -35,7 +35,7 @@ var validate=function(){
     }
 
 
-     if(mm<1 || mm>12 || (mm==2 || dd>29)){
+     if(mm<1 || mm>12 && mm==2 || dd>29){
         alert("Invalid month!");
 
      }else if(dd<1 || dd>31){
@@ -43,7 +43,7 @@ var validate=function(){
 
      }else if(Math.round(results)==0 && gender==="female"){
          document.getElementById("display").innerHTML="You were born" +days[dayOfweek] +"Your Akan name is" +femaleName[0];
-        alert("");
+       
      }else if(Math.round(results)==1 && gender==="female"){
 
          document.getElementById("display").innerHTML="You were born" +days[dayOfweek] +"your Akan name is" +femaleName[1];

@@ -1,5 +1,5 @@
 # Akan Naming
-[1.jpg]
+
 This is a progam that allow the user to generate an Akan Name according to the day they were born. Developed by Moi Shadrack
 
 ## Description
