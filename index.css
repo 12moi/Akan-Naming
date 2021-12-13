@@ -1,120 +1,51 @@
 
 
+
 body{
-    background-color: blue;
+    /* margin: 10% 5%; */
+    padding-left: 10%;
+    padding-right: 10%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    background-image: url(images/bg2.jpg);
+    /* background-image: url(bg1.jpg); */
+    background-image: url(images/child.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.heading{
-        display: flex;
-        justify-content: space-between;
-
-}
-
-.logo img{
-    size: 5px;
-    border-radius: 20px;
-}
-.btn1{
-    /* padding-left: 50%; */
-    font-size: 20px;
-    border-radius: 18px;
-    padding: 15px 30px;
-    margin: 5px 4px;
-    cursor: pointer;
-    background-color:blue;
-}
-.btn1:hover{
-    background-color: white;
-    color: white;
-}
 .container{
-    /* margin-left: 20%; */
-    /* margin-right: 20%; */
-    background-color:blue;
-    border-radius: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-   
-}
-#myForm{
-    background-color: blue;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-bottom: 2%;
-    border-radius: 20px;
-}
-.akan{
-    border-radius: 50px;
-}
-.radio{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 50%;
+    align-items: center;
     
 }
-
-#button{
+.container p{
+    padding-left: 20%;
+}
+.container h1{
+    padding-left: 20%;
+}
+.button{
+    margin-top: 15%;
+}
+.btn{
+    text-decoration: none;
     font-size: 20px;
     border-radius: 18px;
     padding: 15px 30px;
     margin: 5px 4px;
     cursor: pointer;
-    color: white;
-    background-color:black;
+    background-color:blue;
 }
-#button:hover{
-    background-color: white;
-    color: blue;
-}
-#btn:hover{
+.btn:hover{
     background-color: black;
     color: white;
 }
-#day{
-    border-radius: 10px;
-    width: 30%;
-    height: 30px;
+.btn a{
+    text-decoration: none;
 }
-#date, #month{
-    height: 30px;
-    width: 30%;
-    border-radius: 10px;
-}
-#year{
-    border-radius: 10px;
-    height: 30px;
-    margin: 5px;
-    width:30%;
-}
-.socio{
-    display: flex;
-    flex-basis: auto;
+#btn{
+    color: black;
+    margin-top: auto;
+    background-color: blue;
     padding-left: 40%;
-    margin-bottom: 5px;
-    
-    /* justify-content: center; */
-
-}
-.fab{
-    cursor: pointer;
-     color:blue;
-     /* justify-content: center; */
-}
-.fab:hover{
-    background-color: white;
-
-
-}
-.footer{
-    background-color: white;
-    
-    color: rgb(36, 34, 34); 
-    text-align: center;
+    font-size: 30px;
 }
