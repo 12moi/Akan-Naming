@@ -23,7 +23,7 @@ var validate=function(){
     
     // var dayOfweek=birthday.getDay();
 
-    var results=(cc/4-2*cc-1+(5*yy)/4+(26*(mm+1))/10+dd)%7;
+    var results=parseInt(cc/4-2*cc-1+(5*yy)/4+(26*(mm+1))/10+dd)%7;
    
     if(document.getElementById("gender").checked){
         
