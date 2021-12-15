@@ -5,7 +5,7 @@ function birthDay(e){
    e.preventDefault();
    var maleName=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kofi", "kwame"];
    var femaleName=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  
+   var BIRTHDAY=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
    let gender=document.querySelector(".main").value;
     
     let form=document.querySelector(".My-Form");
