@@ -1,47 +1,107 @@
 
 
 
-function birthDay(e){
-   e.preventDefault();
-   var maleName=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kofi", "kwame"];
-   var femaleName=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-   var BIRTHDAY=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-   let gender=document.querySelector(".main").value;
-    
-    let form=document.querySelector(".My-Form");
-    let DOB=document.querySelector(".Birth");
+function akanNaming(e){
 
-   let cc=year.split("")[0]+year.split("")[1];
-   let yy=year.split("")[2]+year.split("")[3];
-    let mm=month;
-   let dd=day;
-   let akanName;
+//   user interface logic
 
-   if(gender=="male"){
-    akanName=maleName[BIRTHDAY];
-   }else if(gender=="female"){
-    akanName=femaleName[BIRTHDAY1];
-  }else{
-     akanName=null;
+  e.preventDefault();
+  // Declaring variables
+  var cc=document.getElementById('century').value;
+   var yy=document.getElementById('year').value;
+   var mm=document.getElementById('month').value;
+   var dd=document.getElementById('date').value;
+  var gender=document.getElementById('gender').value;
+      // form Validation
+  if(cc==''|| cc<19||cc>21){
+      alert('Input a valid Century');
+      return false;
   }
+  if(yy==''|| yy.length>4
+  || yy.length<4
+){
+      alert('Input a valid Year');
+      return false;
+  }
+  if(mm==''|| mm<=0 || mm>12){
+      alert('Input a valid Month')
+      return false;
+  }
+  if(dd==''|| dd<=0 || dd>31){
+      alert('Input a valid day')
+      return false;
+  }
+  if (gender==''){
+      alert('Input a valid gender');
+      return false;
+  }
+  var d=Math.floor(((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7));
+  var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  var male =["Kwasi","Kwadwo","Kwabena","Kwaku","yaw","Kofi","Kwame"];
+  var female=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-  let displayName=document.createElement("h1");
+  // Business Logic
 
-  displayName=apendChild(Text);
-
-  document.querySelector(".gender").appendChild(displayName);
-
-  Text=document.createTextNode(`Your Akan name is, ${akanName}`);
-
+  if(d==0 && gender=='male'){
+      alert("Dear User, Your Akan name is: "+male[0]+ "\n and you were born on: "+days[0])
+      return false;
+  }
+  if(d==1 && gender=='male'){
+      window.alert("Dear User, Your Akan name is: "+male[1]+ "\n and you were born on: "+days[1])
+      return false;
+  }
+  if(d==2 && gender=='male'){
+      window.alert("Dear User, Your Akan name is: "+male[2]+ "\n and you were born on: "+days[2])
+      return false;
+  }
+  if(d==3 && gender=='male'){
+      window.alert("Dear User, Your Akan name is: "+male[3]+ "\n and you were born on: "+days[3])
+      return false;
+  }
+  if(d==4 && gender=='male'){
+      window.alert("Dear User, Your Akan name is: "+male[4]+ "\n and you were born on: "+days[4])
+      return false;
+  }
+  if(d==5 && gender=='male'){
+      window.alert("Dear User, Your Akan name is: "+male[5]+ "\n and you were born on: "+days[5])
+      return false;
+  }
+  if(d==6 && gender=='male'){
+      window.alert("Dear User, Your Akan name is: "+male[6]+ "\n and you were born on: "+days[6])
+      return false;
+  }
+  if(d==0 && gender=='female'){
+      window.alert("Dear User, Your Akan name is: "+female[0]+ "\n and you were born on: "+days[0])
+      return false;
+  }
+  if(d==1 && gender=='female'){
+      window.alert("Dear User, Your Akan name is: "+female[1]+ "\n and you were born on: "+days[1])
+      return false;
+  }
+  if(d==2 && gender=='female'){
+      window.alert("Dear User, Your Akan name is: "+female[2]+ "\n and you were born on: "+days[2])
+      return false;
+  }
+  if(d==3 && gender=='female'){cc.focus();
+      window.alert("Dear User, Your Akan name is: "+female[3]+ "\n and you were born on: "+days[3])
+      return false;
+  }
+  if(d==4 && gender=='female'){
+      window.alert("Dear User, Your Akan name is: "+female[4]+ "\n and you were born on: "+days[4])
+      return false;
+  }
+  if(d==5 && gender=='female'){
+      window.alert("Dear User, Your Akan name is: "+female[5]+ "\n and you were born on: "+days[5])
+      return false;
+  }
+  if(d==6 && gender=='female'){
+      window.alert("Dear User, Your Akan name is: "+female[6]+ "\n and you were born on: "+days[6])
+      return false;
+  }
+  let formz=document.querySelector(".Formz").reset();
 }
-let Form=document.querySelector(".My-Form");
-Form.addEventListener("submit", (e)=>{
-    e.preventDefault;
-})
+// Adding eventlistener to avoid default submission of the empty form
+ let Form = document.querySelector(".Formz").addEventListener("click", akanNaming);
+ 
 
-
-
-
-
-
-    
+   

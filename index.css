@@ -1,8 +1,10 @@
 
 
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;1,200&display=swap');
+}
 body{
-    background-color: blue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 30px;
     background-image: url(images/child.jpg);
     background-position: center;
@@ -10,18 +12,16 @@ body{
     background-size: cover;
 }
 .heading{
-    
         display: flex;
         justify-content: space-between;
-
 }
 
 .logo img{
     size: 5px;
     border-radius: 20px;
 }
-.btn1{
-    /* padding-left: 50%; */
+.Formz{
+   
     font-size: 20px;
     border-radius: 18px;
     padding: 15px 30px;
@@ -29,8 +29,8 @@ body{
     cursor: pointer;
     background-color:blue;
 }
-.btn1:hover{
-    background-color: white;
+.Formz:hover{
+    background-color: black;
     color: white;
 }
 .container{

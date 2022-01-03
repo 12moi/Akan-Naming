@@ -2,6 +2,9 @@
 
 This is a progam that allow the user to generate an Akan Name according to the day they were born. Developed by Moi Shadrack
 
+## Author
+Moi Shadrack
+
 ## Description
 This is a progam that allow the user to generate an Akan Name according to the day they were born. Developed by Moi Shadrack on 12-12-2021.
 
@@ -23,6 +26,11 @@ There are no known bugs so for hence the progam works as expected, although some
 2) CSS<br>
 3) Javascript<br>
 4) Git
+
+## BEHAVIOURAL DRIVEN-DEVELOPMENT (BDD)
+   Behaviour               |           Input         |           Output                    |
+---------------------------|-------------------------|-------------------------------------|
+|Enter your birthdate      | Date of birth           | generate the Akan Name $ day of Birth|
 
 ## Support and Contact
 Any contribution are welcome through project cloning.<br>
